@@ -1,0 +1,162 @@
+[
+  {
+    "id": "fundamentos-001",
+    "level": "iniciante",
+    "topic": "fundamentos",
+    "statement": "O Claude Code pode ser usado diretamente no terminal, como uma ferramenta de linha de comando.",
+    "answer": true,
+    "explanation": "Verdadeiro. O Claude Code tem uma CLI completa que roda no terminal: ele lê o projeto, edita arquivos e executa comandos a partir da linha de comando.",
+    "sourceUrl": "https://code.claude.com/docs/en/overview",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "fundamentos-002",
+    "level": "iniciante",
+    "topic": "fundamentos",
+    "statement": "O Claude Code só funciona dentro do VS Code.",
+    "answer": false,
+    "explanation": "Falso. O VS Code é só uma das opções. O Claude Code também roda no terminal, em outras IDEs como as da JetBrains, no app desktop e no navegador.",
+    "sourceUrl": "https://code.claude.com/docs/en/overview",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "claude-geral-001",
+    "level": "iniciante",
+    "topic": "claude-geral",
+    "statement": "Opus, Sonnet e Haiku são nomes de linhas de modelos Claude da Anthropic.",
+    "answer": true,
+    "explanation": "Verdadeiro. A Anthropic organiza os modelos Claude em linhas: Opus (mais capaz), Sonnet (equilíbrio entre capacidade e velocidade) e Haiku (mais rápido e econômico).",
+    "sourceUrl": "https://platform.claude.com/docs/en/about-claude/models/overview",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "uso-diario-001",
+    "level": "intermediario",
+    "topic": "uso-diario",
+    "statement": "O arquivo CLAUDE.md serve para dar ao Claude Code instruções e contexto persistentes sobre o projeto.",
+    "answer": true,
+    "explanation": "Verdadeiro. O CLAUDE.md guarda instruções que o Claude Code carrega no início de cada sessão, como comandos do projeto, convenções e regras de arquitetura.",
+    "sourceUrl": "https://code.claude.com/docs/en/memory",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "uso-diario-002",
+    "level": "intermediario",
+    "topic": "uso-diario",
+    "statement": "O comando /compact apaga todo o histórico da conversa sem deixar nenhum resumo.",
+    "answer": false,
+    "explanation": "Falso. O /compact libera espaço no contexto resumindo a conversa até ali, e você pode até dizer no que o resumo deve focar. Quem começa uma conversa com o contexto vazio é o /clear.",
+    "sourceUrl": "https://code.claude.com/docs/en/commands",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "avancado-001",
+    "level": "avancado",
+    "topic": "avancado",
+    "statement": "A flag -p (--print) executa o Claude Code em modo não interativo, útil em scripts e pipelines de CI.",
+    "answer": true,
+    "explanation": "Verdadeiro. Com -p o Claude Code recebe o prompt, imprime a resposta e encerra, sem abrir a sessão interativa. É a forma de usá-lo em scripts e na CI.",
+    "sourceUrl": "https://code.claude.com/docs/en/headless",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "extensibilidade-001",
+    "level": "avancado",
+    "topic": "extensibilidade",
+    "statement": "Hooks são definidos em arquivos de settings e executados automaticamente pelo Claude Code em eventos como antes ou depois do uso de uma ferramenta.",
+    "answer": true,
+    "explanation": "Verdadeiro. Hooks ficam em arquivos de settings (como .claude/settings.json) e disparam em eventos do ciclo de vida, por exemplo PreToolUse e PostToolUse, sem depender do modelo lembrar de rodá-los.",
+    "sourceUrl": "https://code.claude.com/docs/en/hooks",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "extensibilidade-002",
+    "level": "avancado",
+    "topic": "extensibilidade",
+    "statement": "O MCP (Model Context Protocol) é um protocolo proprietário que só funciona com o Claude Code.",
+    "answer": false,
+    "explanation": "Falso. O MCP é um padrão aberto (open source) para conectar ferramentas e fontes de dados a aplicações de IA. O Claude Code é um dos clientes que o suportam, não o único.",
+    "sourceUrl": "https://code.claude.com/docs/en/mcp",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "claude-geral-002",
+    "level": "iniciante",
+    "topic": "claude-geral",
+    "statement": "O Claude é um assistente de IA desenvolvido pela OpenAI.",
+    "answer": false,
+    "explanation": "Falso. O Claude é desenvolvido pela Anthropic, empresa de pesquisa e segurança em IA. A OpenAI é outra empresa, responsável pelo ChatGPT.",
+    "sourceUrl": "https://www.anthropic.com/company",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "fundamentos-003",
+    "level": "iniciante",
+    "topic": "fundamentos",
+    "statement": "O Claude Code só lê o código do projeto; ele não consegue editar arquivos nem executar comandos.",
+    "answer": false,
+    "explanation": "Falso. O Claude Code é uma ferramenta agêntica: além de ler o código, ele edita arquivos e executa comandos, sempre de acordo com as permissões que você configura.",
+    "sourceUrl": "https://code.claude.com/docs/en/overview",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "fundamentos-004",
+    "level": "iniciante",
+    "topic": "fundamentos",
+    "statement": "Para usar a maioria das formas do Claude Code é preciso ter uma assinatura Claude ou uma conta no Anthropic Console.",
+    "answer": true,
+    "explanation": "Verdadeiro. A maior parte das superfícies exige uma assinatura Claude ou uma conta no Anthropic Console. Algumas também aceitam provedores de nuvem de terceiros.",
+    "sourceUrl": "https://code.claude.com/docs/en/overview",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "uso-diario-003",
+    "level": "intermediario",
+    "topic": "uso-diario",
+    "statement": "O comando /clear inicia uma nova conversa com o contexto vazio.",
+    "answer": true,
+    "explanation": "Verdadeiro. O /clear começa do zero, sem o histórico da conversa no contexto. Para liberar espaço mantendo um resumo do que foi feito, use o /compact.",
+    "sourceUrl": "https://code.claude.com/docs/en/commands",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "uso-diario-004",
+    "level": "intermediario",
+    "topic": "uso-diario",
+    "statement": "No plan mode, o Claude Code edita arquivos livremente enquanto monta o plano.",
+    "answer": false,
+    "explanation": "Falso. O plan mode serve para analisar antes de mudar: o Claude Code lê e explora o projeto, mas não edita arquivos enquanto o plano não for aprovado.",
+    "sourceUrl": "https://code.claude.com/docs/en/permission-modes",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "claude-geral-003",
+    "level": "intermediario",
+    "topic": "claude-geral",
+    "statement": "A janela de contexto do Claude Code é ilimitada, então conversas longas nunca precisam ser compactadas.",
+    "answer": false,
+    "explanation": "Falso. A janela de contexto tem tamanho limitado e vai enchendo com instruções, arquivos lidos e respostas. Quando ela enche, a conversa é compactada em um resumo.",
+    "sourceUrl": "https://code.claude.com/docs/en/context-window",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "avancado-002",
+    "level": "avancado",
+    "topic": "avancado",
+    "statement": "Git worktrees permitem rodar sessões paralelas do Claude Code sem que as edições de uma sessão colidam com as da outra.",
+    "answer": true,
+    "explanation": "Verdadeiro. Cada worktree é uma cópia de trabalho separada do mesmo repositório, então sessões paralelas editam arquivos isolados umas das outras.",
+    "sourceUrl": "https://code.claude.com/docs/en/worktrees",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "extensibilidade-003",
+    "level": "avancado",
+    "topic": "extensibilidade",
+    "statement": "Subagents compartilham a mesma janela de contexto da conversa principal.",
+    "answer": false,
+    "explanation": "Falso. Cada subagent roda com sua própria janela de contexto, prompt de sistema e permissões. Por isso eles servem para tarefas que encheriam a conversa principal de logs ou buscas.",
+    "sourceUrl": "https://code.claude.com/docs/en/sub-agents",
+    "reviewedAt": "2026-11-16"
+  }
+]
