@@ -1,4 +1,4 @@
-import type { Level } from "@/lib/question-schema";
+import type { Level } from "@/lib/levels";
 
 const BUTTON_BASE =
   "inline-flex min-h-12 items-center justify-center gap-2 rounded-lg px-5 py-3 text-base font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-background disabled:cursor-not-allowed disabled:opacity-60";

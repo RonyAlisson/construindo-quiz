@@ -2,23 +2,9 @@
 // Sem `server-only`: o script scripts/validate-questions.ts também importa este módulo.
 import { z } from "zod";
 
-export const LEVELS = ["iniciante", "intermediario", "avancado"] as const;
-export const TOPICS = [
-  "claude-geral",
-  "fundamentos",
-  "uso-diario",
-  "extensibilidade",
-  "avancado",
-] as const;
+import { LEVELS, TOPICS } from "./levels";
 
-export type Level = (typeof LEVELS)[number];
-export type Topic = (typeof TOPICS)[number];
-
-export const LEVEL_LABELS: Record<Level, string> = {
-  iniciante: "Iniciante",
-  intermediario: "Intermediário",
-  avancado: "Avançado",
-};
+export { LEVEL_LABELS, LEVELS, TOPICS, type Level, type Topic } from "./levels";
 
 // docs.claude.com hoje redireciona para platform.claude.com; os dois são aceitos.
 const OFFICIAL_DOC_HOSTS = [

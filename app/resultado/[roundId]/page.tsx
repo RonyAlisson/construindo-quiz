@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, unstable_rethrow } from "next/navigation";
 import { Suspense } from "react";
 import { ResultSummary } from "@/components/ResultSummary";
 import { ReviewList } from "@/components/ReviewList";
@@ -34,6 +34,7 @@ async function Result({ params }: { params: PageProps<"/resultado/[roundId]">["p
   try {
     result = await getResult(roundId);
   } catch (error) {
+    unstable_rethrow(error);
     if (error instanceof ApiError && error.code === "ROUND_NOT_FOUND") notFound();
     if (error instanceof ApiError) {
       return (

@@ -1,4 +1,4 @@
-import { LEVEL_LABELS, type Level } from "@/lib/question-schema";
+import { LEVEL_LABELS, type Level } from "@/lib/levels";
 import { LEVEL_BADGE_CLASSES } from "./ui";
 
 export function LevelBadge({ level }: { level: Level }) {

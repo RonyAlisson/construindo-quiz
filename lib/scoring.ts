@@ -1,8 +1,8 @@
 // Pontuação e ranking (PRD 3.3). 1 ponto por acerto, sem peso por nível.
 // ATENÇÃO: a regra de isBetterRound também existe em SQL, na função submit_round
 // (supabase/migrations). As duas precisam ficar iguais.
-import type { Level } from "./question-schema";
-import { LEVELS } from "./question-schema";
+import type { Level } from "./levels";
+import { LEVELS } from "./levels";
 
 export type Tier = "Explorador" | "Praticante" | "Especialista" | "Mestre do Claude Code";
 

@@ -1,5 +1,6 @@
 // Helpers das rotas: formato de erro único {error: {code, message}} (PRD 7.4).
 import "server-only";
+import { unstable_rethrow } from "next/navigation";
 import type { z } from "zod";
 
 export type ErrorCode =
@@ -96,6 +97,9 @@ export async function handle(fn: () => Promise<Response>): Promise<Response> {
   try {
     return await fn();
   } catch (error) {
+    // Erros internos do Next (ex.: sinal de que a rota é dinâmica durante o pré-render) não são
+    // falhas da aplicação: precisam ser repassados, nunca convertidos em 500.
+    unstable_rethrow(error);
     if (error instanceof ApiError) {
       const headers = error.code === "RATE_LIMITED" ? { "Retry-After": "60" } : undefined;
       return jsonError(error, headers);
