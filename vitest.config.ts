@@ -28,7 +28,7 @@ export default defineConfig(({ mode }) => ({
           include: ["tests/api/**/*.test.ts"],
           environment: "node",
           // Testes de API usam o Supabase local, configurado em .env.local.
-          env: loadEnv(mode, process.cwd(), ""),
+          env: { ...loadEnv(mode, process.cwd(), ""), RATE_LIMIT_DISABLED: "1" },
           fileParallelism: false,
           testTimeout: 20_000,
           hookTimeout: 30_000,

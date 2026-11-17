@@ -1,5 +1,85 @@
 [
   {
+    "id": "claude-geral-001",
+    "level": "iniciante",
+    "topic": "claude-geral",
+    "statement": "Opus, Sonnet e Haiku são nomes de linhas de modelos Claude da Anthropic.",
+    "answer": true,
+    "explanation": "Verdadeiro. Opus, Sonnet e Haiku são linhas de modelos Claude da Anthropic, com equilíbrios diferentes entre capacidade, velocidade e custo. A Anthropic também lança outras linhas; a lista atual fica na documentação de modelos.",
+    "sourceUrl": "https://platform.claude.com/docs/en/models/overview",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "claude-geral-002",
+    "level": "iniciante",
+    "topic": "claude-geral",
+    "statement": "O Claude é um assistente de IA desenvolvido pela OpenAI.",
+    "answer": false,
+    "explanation": "Falso. O Claude é desenvolvido pela Anthropic, empresa de pesquisa e segurança em IA. A OpenAI é outra empresa, responsável pelo ChatGPT.",
+    "sourceUrl": "https://www.anthropic.com/company",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "claude-geral-004",
+    "level": "iniciante",
+    "topic": "claude-geral",
+    "statement": "Os modelos Claude atuais conseguem analisar imagens enviadas pelo usuário, além de texto.",
+    "answer": true,
+    "explanation": "Verdadeiro. Todos os modelos Claude atuais aceitam texto e imagem como entrada (visão). Dá para enviar, por exemplo, um print de tela ou um gráfico e pedir que o Claude explique o conteúdo.",
+    "sourceUrl": "https://platform.claude.com/docs/en/models/overview",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "claude-geral-005",
+    "level": "iniciante",
+    "topic": "claude-geral",
+    "statement": "Os modelos Claude só entendem e respondem em inglês.",
+    "answer": false,
+    "explanation": "Falso. Os modelos Claude atuais são multilíngues: entendem e respondem em vários idiomas, incluindo o português.",
+    "sourceUrl": "https://platform.claude.com/docs/en/intro",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "claude-geral-006",
+    "level": "iniciante",
+    "topic": "claude-geral",
+    "statement": "Tokens são as pequenas unidades de texto que um modelo processa e podem ser palavras inteiras, pedaços de palavras ou caracteres.",
+    "answer": true,
+    "explanation": "Verdadeiro. O modelo não lê o texto letra por letra nem palavra por palavra: ele o divide em tokens, que podem ser palavras, partes de palavras ou caracteres. Quantos caracteres cabem em um token depende do modelo e do idioma.",
+    "sourceUrl": "https://platform.claude.com/docs/en/about-claude/glossary",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "claude-geral-007",
+    "level": "iniciante",
+    "topic": "claude-geral",
+    "statement": "O conhecimento de um modelo Claude é atualizado automaticamente todos os dias com as notícias mais recentes.",
+    "answer": false,
+    "explanation": "Falso. Cada modelo tem uma data de corte de conhecimento (knowledge cutoff): ele conhece bem o que estava nos dados de treinamento até essa data. Informações mais novas precisam ser fornecidas na conversa ou buscadas com ferramentas.",
+    "sourceUrl": "https://platform.claude.com/docs/en/models/overview",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "claude-geral-008",
+    "level": "iniciante",
+    "topic": "claude-geral",
+    "statement": "O Claude é baseado em um modelo de linguagem de grande porte (LLM), treinado com grandes volumes de texto.",
+    "answer": true,
+    "explanation": "Verdadeiro. LLMs são modelos treinados com enormes quantidades de texto, capazes de gerar texto, responder perguntas e resumir informações. O Claude é um LLM refinado para atuar como assistente útil.",
+    "sourceUrl": "https://platform.claude.com/docs/en/about-claude/glossary",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "claude-geral-009",
+    "level": "iniciante",
+    "topic": "claude-geral",
+    "statement": "A janela de contexto de um modelo é o conjunto de todos os dados usados para treiná-lo.",
+    "answer": false,
+    "explanation": "Falso. A janela de contexto é a \"memória de trabalho\" do modelo: o texto que ele consegue considerar ao gerar uma resposta, como a conversa atual. Ela é diferente do grande volume de dados usado no treinamento.",
+    "sourceUrl": "https://platform.claude.com/docs/en/about-claude/glossary",
+    "reviewedAt": "2026-11-16"
+  },
+  {
     "id": "fundamentos-001",
     "level": "iniciante",
     "topic": "fundamentos",
@@ -17,76 +97,6 @@
     "answer": false,
     "explanation": "Falso. O VS Code é só uma das opções. O Claude Code também roda no terminal, em outras IDEs como as da JetBrains, no app desktop e no navegador.",
     "sourceUrl": "https://code.claude.com/docs/en/overview",
-    "reviewedAt": "2026-11-16"
-  },
-  {
-    "id": "claude-geral-001",
-    "level": "iniciante",
-    "topic": "claude-geral",
-    "statement": "Opus, Sonnet e Haiku são nomes de linhas de modelos Claude da Anthropic.",
-    "answer": true,
-    "explanation": "Verdadeiro. A Anthropic organiza os modelos Claude em linhas: Opus (mais capaz), Sonnet (equilíbrio entre capacidade e velocidade) e Haiku (mais rápido e econômico).",
-    "sourceUrl": "https://platform.claude.com/docs/en/about-claude/models/overview",
-    "reviewedAt": "2026-11-16"
-  },
-  {
-    "id": "uso-diario-001",
-    "level": "intermediario",
-    "topic": "uso-diario",
-    "statement": "O arquivo CLAUDE.md serve para dar ao Claude Code instruções e contexto persistentes sobre o projeto.",
-    "answer": true,
-    "explanation": "Verdadeiro. O CLAUDE.md guarda instruções que o Claude Code carrega no início de cada sessão, como comandos do projeto, convenções e regras de arquitetura.",
-    "sourceUrl": "https://code.claude.com/docs/en/memory",
-    "reviewedAt": "2026-11-16"
-  },
-  {
-    "id": "uso-diario-002",
-    "level": "intermediario",
-    "topic": "uso-diario",
-    "statement": "O comando /compact apaga todo o histórico da conversa sem deixar nenhum resumo.",
-    "answer": false,
-    "explanation": "Falso. O /compact libera espaço no contexto resumindo a conversa até ali, e você pode até dizer no que o resumo deve focar. Quem começa uma conversa com o contexto vazio é o /clear.",
-    "sourceUrl": "https://code.claude.com/docs/en/commands",
-    "reviewedAt": "2026-11-16"
-  },
-  {
-    "id": "avancado-001",
-    "level": "avancado",
-    "topic": "avancado",
-    "statement": "A flag -p (--print) executa o Claude Code em modo não interativo, útil em scripts e pipelines de CI.",
-    "answer": true,
-    "explanation": "Verdadeiro. Com -p o Claude Code recebe o prompt, imprime a resposta e encerra, sem abrir a sessão interativa. É a forma de usá-lo em scripts e na CI.",
-    "sourceUrl": "https://code.claude.com/docs/en/headless",
-    "reviewedAt": "2026-11-16"
-  },
-  {
-    "id": "extensibilidade-001",
-    "level": "avancado",
-    "topic": "extensibilidade",
-    "statement": "Hooks são definidos em arquivos de settings e executados automaticamente pelo Claude Code em eventos como antes ou depois do uso de uma ferramenta.",
-    "answer": true,
-    "explanation": "Verdadeiro. Hooks ficam em arquivos de settings (como .claude/settings.json) e disparam em eventos do ciclo de vida, por exemplo PreToolUse e PostToolUse, sem depender do modelo lembrar de rodá-los.",
-    "sourceUrl": "https://code.claude.com/docs/en/hooks",
-    "reviewedAt": "2026-11-16"
-  },
-  {
-    "id": "extensibilidade-002",
-    "level": "avancado",
-    "topic": "extensibilidade",
-    "statement": "O MCP (Model Context Protocol) é um protocolo proprietário que só funciona com o Claude Code.",
-    "answer": false,
-    "explanation": "Falso. O MCP é um padrão aberto (open source) para conectar ferramentas e fontes de dados a aplicações de IA. O Claude Code é um dos clientes que o suportam, não o único.",
-    "sourceUrl": "https://code.claude.com/docs/en/mcp",
-    "reviewedAt": "2026-11-16"
-  },
-  {
-    "id": "claude-geral-002",
-    "level": "iniciante",
-    "topic": "claude-geral",
-    "statement": "O Claude é um assistente de IA desenvolvido pela OpenAI.",
-    "answer": false,
-    "explanation": "Falso. O Claude é desenvolvido pela Anthropic, empresa de pesquisa e segurança em IA. A OpenAI é outra empresa, responsável pelo ChatGPT.",
-    "sourceUrl": "https://www.anthropic.com/company",
     "reviewedAt": "2026-11-16"
   },
   {
@@ -110,6 +120,206 @@
     "reviewedAt": "2026-11-16"
   },
   {
+    "id": "fundamentos-005",
+    "level": "iniciante",
+    "topic": "fundamentos",
+    "statement": "O Claude Code pode se conectar a ferramentas externas, como Google Drive, Jira e Slack, para usar informações delas no trabalho.",
+    "answer": true,
+    "explanation": "Verdadeiro. Por meio do MCP (Model Context Protocol), o Claude Code pode ler documentos no Google Drive, atualizar tickets no Jira, buscar dados no Slack ou usar ferramentas próprias da empresa.",
+    "sourceUrl": "https://code.claude.com/docs/en/overview",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "fundamentos-006",
+    "level": "iniciante",
+    "topic": "fundamentos",
+    "statement": "O Claude Code só pode ser instalado em computadores com macOS.",
+    "answer": false,
+    "explanation": "Falso. O Claude Code roda em macOS, Linux e Windows (de forma nativa ou dentro do WSL). Também há opções que não exigem instalação local, como as sessões na nuvem pelo navegador.",
+    "sourceUrl": "https://code.claude.com/docs/en/setup",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "fundamentos-007",
+    "level": "iniciante",
+    "topic": "fundamentos",
+    "statement": "Pelo app do Claude no celular é possível iniciar e acompanhar tarefas do Claude Code.",
+    "answer": true,
+    "explanation": "Verdadeiro. O app do Claude para iOS e Android permite iniciar, acompanhar e orientar tarefas do Claude Code. O código não roda no celular: o app é um cliente para sessões na nuvem ou no seu computador.",
+    "sourceUrl": "https://code.claude.com/docs/en/mobile",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "fundamentos-008",
+    "level": "iniciante",
+    "topic": "fundamentos",
+    "statement": "O Claude Code só consegue trabalhar com projetos escritos em Python ou JavaScript.",
+    "answer": false,
+    "explanation": "Falso. O Claude Code usa os modelos Claude para entender o código e consegue ler código em qualquer linguagem, entendendo como as partes do projeto se conectam.",
+    "sourceUrl": "https://code.claude.com/docs/en/how-claude-code-works",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "fundamentos-009",
+    "level": "iniciante",
+    "topic": "fundamentos",
+    "statement": "Além de escrever código novo, o Claude Code pode cuidar de tarefas repetitivas, como escrever testes e notas de versão.",
+    "answer": true,
+    "explanation": "Verdadeiro. O Claude Code é indicado para tarefas que costumam ficar para depois: escrever testes, corrigir erros de lint, resolver conflitos de merge, atualizar dependências e redigir notas de versão (release notes).",
+    "sourceUrl": "https://code.claude.com/docs/en/overview",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "fundamentos-010",
+    "level": "iniciante",
+    "topic": "fundamentos",
+    "statement": "Uma tarefa do Claude Code iniciada na nuvem pelo navegador para de rodar assim que você fecha o notebook.",
+    "answer": false,
+    "explanation": "Falso. Uma sessão na nuvem roda na infraestrutura da Anthropic, não no seu computador. Ela continua rodando depois que você fecha o notebook, e você pode acompanhá-la de qualquer dispositivo.",
+    "sourceUrl": "https://code.claude.com/docs/en/claude-code-on-the-web",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "uso-diario-005",
+    "level": "iniciante",
+    "topic": "uso-diario",
+    "statement": "O Claude Code salva automaticamente pontos de restauração (checkpoints) que permitem desfazer as alterações que ele fez nos arquivos.",
+    "answer": true,
+    "explanation": "Verdadeiro. A cada mensagem que você envia, o Claude Code registra um checkpoint das edições. Com o /rewind dá para voltar o código, a conversa ou os dois a um ponto anterior.",
+    "sourceUrl": "https://code.claude.com/docs/en/checkpointing",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "uso-diario-006",
+    "level": "iniciante",
+    "topic": "uso-diario",
+    "statement": "Ao fechar o Claude Code, a conversa é perdida e não há como retomá-la depois.",
+    "answer": false,
+    "explanation": "Falso. As conversas ficam salvas. O comando claude --continue reabre a sessão mais recente da pasta, e o claude --resume (ou /resume) abre uma lista para escolher uma conversa anterior.",
+    "sourceUrl": "https://code.claude.com/docs/en/sessions",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "claude-geral-003",
+    "level": "intermediario",
+    "topic": "claude-geral",
+    "statement": "A janela de contexto do Claude Code é ilimitada, então conversas longas nunca precisam ser compactadas.",
+    "answer": false,
+    "explanation": "Falso. A janela de contexto tem tamanho limitado e vai enchendo com instruções, arquivos lidos e respostas. Quando ela enche, a conversa é compactada em um resumo.",
+    "sourceUrl": "https://code.claude.com/docs/en/context-window",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "claude-geral-010",
+    "level": "intermediario",
+    "topic": "claude-geral",
+    "statement": "A Messages API do Claude não guarda o histórico entre chamadas, então a conversa inteira precisa ser reenviada a cada requisição.",
+    "answer": true,
+    "explanation": "Verdadeiro. A Messages API é stateless: cada requisição precisa conter todo o histórico relevante da conversa. Quem mantém e reenvia esse histórico é a aplicação que chama a API.",
+    "sourceUrl": "https://platform.claude.com/docs/en/build-with-claude/working-with-messages",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "claude-geral-011",
+    "level": "intermediario",
+    "topic": "claude-geral",
+    "statement": "Quanto mais tokens houver no contexto, melhor: a precisão do modelo não cai em contextos muito longos.",
+    "answer": false,
+    "explanation": "Falso. Mais contexto não é automaticamente melhor. Conforme o número de tokens cresce, a precisão e a capacidade de recuperar informações caem, fenômeno chamado context rot. Por isso, escolher o que entra no contexto importa tanto quanto o espaço disponível.",
+    "sourceUrl": "https://platform.claude.com/docs/en/build-with-claude/context-windows",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "claude-geral-012",
+    "level": "intermediario",
+    "topic": "claude-geral",
+    "statement": "Mesmo com temperature 0, a Claude API pode gerar respostas diferentes para a mesma entrada.",
+    "answer": true,
+    "explanation": "Verdadeiro. Temperatures baixas deixam as respostas mais conservadoras e previsíveis, mas não totalmente determinísticas: entradas idênticas ainda podem produzir saídas diferentes entre chamadas.",
+    "sourceUrl": "https://platform.claude.com/docs/en/about-claude/glossary",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "extensibilidade-004",
+    "level": "intermediario",
+    "topic": "extensibilidade",
+    "statement": "Uma skill é criada a partir de um arquivo SKILL.md com instruções que o Claude usa quando são relevantes para a tarefa.",
+    "answer": true,
+    "explanation": "Verdadeiro. O SKILL.md tem um frontmatter YAML (com a description, que ajuda o Claude a decidir quando usá-la) e as instruções em Markdown. A skill também pode ser chamada diretamente com /nome-da-skill.",
+    "sourceUrl": "https://code.claude.com/docs/en/skills",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "extensibilidade-005",
+    "level": "intermediario",
+    "topic": "extensibilidade",
+    "statement": "O conteúdo completo de todas as skills instaladas é carregado no contexto logo no início de cada sessão.",
+    "answer": false,
+    "explanation": "Falso. No início da sessão entram no contexto apenas os nomes e as descrições das skills, para o Claude saber o que está disponível. O conteúdo completo de uma skill só é carregado quando ela é usada.",
+    "sourceUrl": "https://code.claude.com/docs/en/skills",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "extensibilidade-006",
+    "level": "intermediario",
+    "topic": "extensibilidade",
+    "statement": "Um plugin do Claude Code pode empacotar skills, subagents, hooks e MCP servers para instalação como uma unidade.",
+    "answer": true,
+    "explanation": "Verdadeiro. Um plugin é um diretório de componentes, normalmente com um manifesto em .claude-plugin/plugin.json, que o Claude Code instala e carrega de uma vez. É uma forma prática de distribuir a mesma configuração para uma equipe.",
+    "sourceUrl": "https://code.claude.com/docs/en/plugins/overview",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "extensibilidade-007",
+    "level": "intermediario",
+    "topic": "extensibilidade",
+    "statement": "Não existe comando na CLI para adicionar um MCP server: é preciso sempre editar arquivos JSON manualmente.",
+    "answer": false,
+    "explanation": "Falso. O comando claude mcp add registra um servidor direto pela CLI (por exemplo, com --transport http e a URL), e o claude mcp add-json aceita a configuração em JSON. Editar o .mcp.json à mão é só uma das opções.",
+    "sourceUrl": "https://code.claude.com/docs/en/mcp",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "extensibilidade-008",
+    "level": "intermediario",
+    "topic": "extensibilidade",
+    "statement": "O arquivo .claude/settings.local.json guarda configurações pessoais de um projeto e fica fora dos commits.",
+    "answer": true,
+    "explanation": "Verdadeiro. O .claude/settings.json é compartilhado com a equipe pelo git, enquanto o .claude/settings.local.json guarda ajustes só seus naquele projeto. Ao criar esse arquivo, o Claude Code o mantém fora do git.",
+    "sourceUrl": "https://code.claude.com/docs/en/settings",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "extensibilidade-009",
+    "level": "intermediario",
+    "topic": "extensibilidade",
+    "statement": "As configurações de usuário (~/.claude/settings.json) têm precedência sobre as configurações do projeto (.claude/settings.json).",
+    "answer": false,
+    "explanation": "Falso. A ordem, da maior para a menor precedência, é: managed settings, linha de comando, projeto local, projeto compartilhado e, por último, usuário. Uma chave definida no projeto vence a mesma chave definida no nível de usuário.",
+    "sourceUrl": "https://code.claude.com/docs/en/settings",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "uso-diario-001",
+    "level": "intermediario",
+    "topic": "uso-diario",
+    "statement": "O arquivo CLAUDE.md serve para dar ao Claude Code instruções e contexto persistentes sobre o projeto.",
+    "answer": true,
+    "explanation": "Verdadeiro. O CLAUDE.md guarda instruções que o Claude Code carrega no início de cada sessão, como comandos do projeto, convenções e regras de arquitetura.",
+    "sourceUrl": "https://code.claude.com/docs/en/memory",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "uso-diario-002",
+    "level": "intermediario",
+    "topic": "uso-diario",
+    "statement": "O comando /compact apaga todo o histórico da conversa sem deixar nenhum resumo.",
+    "answer": false,
+    "explanation": "Falso. O /compact libera espaço no contexto resumindo a conversa até ali, e você pode até dizer no que o resumo deve focar. Quem começa uma conversa com o contexto vazio é o /clear.",
+    "sourceUrl": "https://code.claude.com/docs/en/commands",
+    "reviewedAt": "2026-11-16"
+  },
+  {
     "id": "uso-diario-003",
     "level": "intermediario",
     "topic": "uso-diario",
@@ -130,13 +340,73 @@
     "reviewedAt": "2026-11-16"
   },
   {
-    "id": "claude-geral-003",
+    "id": "uso-diario-007",
     "level": "intermediario",
-    "topic": "claude-geral",
-    "statement": "A janela de contexto do Claude Code é ilimitada, então conversas longas nunca precisam ser compactadas.",
+    "topic": "uso-diario",
+    "statement": "Regras de deny bloqueiam a ferramenta em qualquer modo de permissão, inclusive no bypassPermissions.",
+    "answer": true,
+    "explanation": "Verdadeiro. Os modos de permissão definem o comportamento base, e as regras ficam por cima. Uma regra deny bloqueia a ação em todos os modos, até no bypassPermissions, que libera todo o resto.",
+    "sourceUrl": "https://code.claude.com/docs/en/permission-modes",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "uso-diario-008",
+    "level": "intermediario",
+    "topic": "uso-diario",
+    "statement": "O /rewind também desfaz ações em sistemas remotos, como alterações em banco de dados, chamadas de API e deploys.",
     "answer": false,
-    "explanation": "Falso. A janela de contexto tem tamanho limitado e vai enchendo com instruções, arquivos lidos e respostas. Quando ela enche, a conversa é compactada em um resumo.",
-    "sourceUrl": "https://code.claude.com/docs/en/context-window",
+    "explanation": "Falso. Checkpoints cobrem apenas mudanças em arquivos. Ações que afetam sistemas remotos, como bancos de dados, APIs e deploys, não podem ser desfeitas; por isso elas são controladas pelo modo de permissão.",
+    "sourceUrl": "https://code.claude.com/docs/en/how-claude-code-works",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "uso-diario-009",
+    "level": "intermediario",
+    "topic": "uso-diario",
+    "statement": "Um CLAUDE.md em ~/.claude/CLAUDE.md guarda preferências pessoais que valem para todos os seus projetos.",
+    "answer": true,
+    "explanation": "Verdadeiro. Além do CLAUDE.md do projeto, compartilhado com a equipe, existe o de usuário em ~/.claude/CLAUDE.md. Ele guarda preferências pessoais, como estilo de código, e é carregado em todos os projetos.",
+    "sourceUrl": "https://code.claude.com/docs/en/memory",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "uso-diario-010",
+    "level": "intermediario",
+    "topic": "uso-diario",
+    "statement": "As instruções do CLAUDE.md são aplicadas como regras obrigatórias: o Claude Code fica tecnicamente impedido de descumpri-las.",
+    "answer": false,
+    "explanation": "Falso. O CLAUDE.md é tratado como contexto, não como configuração imposta: o Claude tenta segui-lo, mas não há garantia de cumprimento estrito. Para bloquear uma ação de fato, use permissões ou um hook PreToolUse.",
+    "sourceUrl": "https://code.claude.com/docs/en/memory",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "uso-diario-011",
+    "level": "intermediario",
+    "topic": "uso-diario",
+    "statement": "O comando /context mostra como a janela de contexto está sendo ocupada na sessão atual.",
+    "answer": true,
+    "explanation": "Verdadeiro. O /context exibe o uso atual do contexto em uma grade colorida e sugere otimizações, como ferramentas que ocupam muito espaço. É útil para decidir quando usar /compact ou /clear.",
+    "sourceUrl": "https://code.claude.com/docs/en/commands",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "uso-diario-012",
+    "level": "intermediario",
+    "topic": "uso-diario",
+    "statement": "No modo acceptEdits, o Claude Code aprova automaticamente qualquer comando shell, além das edições de arquivos.",
+    "answer": false,
+    "explanation": "Falso. O acceptEdits aprova edições de arquivos e comandos comuns de sistema de arquivos (como mkdir, mv e cp) dentro do diretório de trabalho. Os demais comandos shell, fora os somente leitura, continuam pedindo permissão.",
+    "sourceUrl": "https://code.claude.com/docs/en/permission-modes",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "avancado-001",
+    "level": "avancado",
+    "topic": "avancado",
+    "statement": "A flag -p (--print) executa o Claude Code em modo não interativo, útil em scripts e pipelines de CI.",
+    "answer": true,
+    "explanation": "Verdadeiro. Com -p o Claude Code recebe o prompt, imprime a resposta e encerra, sem abrir a sessão interativa. É a forma de usá-lo em scripts e na CI.",
+    "sourceUrl": "https://code.claude.com/docs/en/headless",
     "reviewedAt": "2026-11-16"
   },
   {
@@ -150,6 +420,126 @@
     "reviewedAt": "2026-11-16"
   },
   {
+    "id": "avancado-003",
+    "level": "avancado",
+    "topic": "avancado",
+    "statement": "No modo -p, combinar --output-format json com --json-schema faz a resposta seguir um JSON Schema informado.",
+    "answer": true,
+    "explanation": "Verdadeiro. Com --json-schema, a saída estruturada vem no campo structured_output, junto com metadados da execução, como o ID da sessão e o uso. Isso facilita consumir o resultado em scripts.",
+    "sourceUrl": "https://code.claude.com/docs/en/headless",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "avancado-004",
+    "level": "avancado",
+    "topic": "avancado",
+    "statement": "O Claude Agent SDK está disponível apenas para Python.",
+    "answer": false,
+    "explanation": "Falso. O Agent SDK pode ser usado em Python e em TypeScript e oferece as mesmas ferramentas e o mesmo loop de agente do Claude Code. Para outras linguagens, dá para chamar a CLI com -p como subprocesso.",
+    "sourceUrl": "https://code.claude.com/docs/en/agent-sdk/overview",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "avancado-005",
+    "level": "avancado",
+    "topic": "avancado",
+    "statement": "Com a Claude Code GitHub Action, mencionar @claude em um comentário de PR ou issue aciona o Claude para analisar e implementar mudanças.",
+    "answer": true,
+    "explanation": "Verdadeiro. A action roda o Claude Code nos workflows do repositório. Ao ser mencionado com @claude, ele analisa o código, implementa mudanças e faz push de commits. O /install-github-app ajuda na configuração.",
+    "sourceUrl": "https://code.claude.com/docs/en/github-actions",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "avancado-006",
+    "level": "avancado",
+    "topic": "avancado",
+    "statement": "O sandbox de Bash do Claude Code depende do Docker para isolar os comandos.",
+    "answer": false,
+    "explanation": "Falso. O sandbox usa recursos do próprio sistema operacional: o framework Seatbelt no macOS e o bubblewrap no Linux e no WSL2. Ele restringe os arquivos e os domínios de rede que os comandos podem acessar.",
+    "sourceUrl": "https://code.claude.com/docs/en/sandboxing",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "avancado-007",
+    "level": "avancado",
+    "topic": "avancado",
+    "statement": "As managed settings, distribuídas pela organização, têm a maior precedência entre os níveis de configuração do Claude Code.",
+    "answer": true,
+    "explanation": "Verdadeiro. Managed settings ficam acima de todos os outros níveis: valores de usuário, projeto, local ou --settings não as sobrescrevem. A exceção são algumas chaves de segurança em que um valor mais restritivo de nível inferior também vale.",
+    "sourceUrl": "https://code.claude.com/docs/en/managed-settings",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "avancado-008",
+    "level": "avancado",
+    "topic": "avancado",
+    "statement": "Ao iniciar com claude --worktree <nome>, o Claude Code trabalha direto na branch atual do checkout principal.",
+    "answer": false,
+    "explanation": "Falso. O --worktree cria um worktree isolado, por padrão em .claude/worktrees/<nome>/ na raiz do repositório, em uma branch nova chamada worktree-<nome>. Assim o checkout principal não é afetado.",
+    "sourceUrl": "https://code.claude.com/docs/en/worktrees",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "avancado-009",
+    "level": "avancado",
+    "topic": "avancado",
+    "statement": "No modo -p, a flag --allowedTools pré-aprova ferramentas específicas para que rodem sem pedir permissão.",
+    "answer": true,
+    "explanation": "Verdadeiro. Como não há ninguém para aprovar prompts em um script, --allowedTools lista o que pode rodar sem pedir permissão. Ele aceita a sintaxe de regras de permissão, como Bash(git diff *).",
+    "sourceUrl": "https://code.claude.com/docs/en/headless",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "avancado-010",
+    "level": "avancado",
+    "topic": "avancado",
+    "statement": "No modo -p não é possível continuar uma conversa anterior: cada execução sempre começa do zero.",
+    "answer": false,
+    "explanation": "Falso. O modo não interativo aceita --continue para seguir a conversa mais recente e --resume com um ID de sessão para retomar uma conversa específica, o que permite encadear etapas em scripts.",
+    "sourceUrl": "https://code.claude.com/docs/en/headless",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "avancado-011",
+    "level": "avancado",
+    "topic": "avancado",
+    "statement": "Configurar isolation: worktree em um subagent faz ele trabalhar em uma cópia isolada do repositório, em um git worktree temporário.",
+    "answer": true,
+    "explanation": "Verdadeiro. Com isolation: worktree, o subagent roda em um git worktree temporário, com sua própria cópia dos arquivos. Assim suas edições não colidem com as da conversa principal.",
+    "sourceUrl": "https://code.claude.com/docs/en/sub-agents",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "avancado-012",
+    "level": "avancado",
+    "topic": "avancado",
+    "statement": "No modo de permissão dontAsk, pensado para CI, toda ação que pediria permissão é aprovada automaticamente.",
+    "answer": false,
+    "explanation": "Falso. É o contrário: no dontAsk, toda chamada que pediria permissão é negada automaticamente. Só rodam ações que não precisam de aprovação e as pré-aprovadas por regras allow ou --allowedTools.",
+    "sourceUrl": "https://code.claude.com/docs/en/permission-modes",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "extensibilidade-001",
+    "level": "avancado",
+    "topic": "extensibilidade",
+    "statement": "Hooks são definidos em arquivos de settings e executados automaticamente pelo Claude Code em eventos como antes ou depois do uso de uma ferramenta.",
+    "answer": true,
+    "explanation": "Verdadeiro. Hooks ficam em arquivos de settings (como .claude/settings.json) e disparam em eventos do ciclo de vida, por exemplo PreToolUse e PostToolUse, sem depender do modelo lembrar de rodá-los.",
+    "sourceUrl": "https://code.claude.com/docs/en/hooks",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "extensibilidade-002",
+    "level": "avancado",
+    "topic": "extensibilidade",
+    "statement": "O MCP (Model Context Protocol) é um protocolo proprietário que só funciona com o Claude Code.",
+    "answer": false,
+    "explanation": "Falso. O MCP é um padrão aberto (open source) para conectar ferramentas e fontes de dados a aplicações de IA. O Claude Code é um dos clientes que o suportam, não o único.",
+    "sourceUrl": "https://code.claude.com/docs/en/mcp",
+    "reviewedAt": "2026-11-16"
+  },
+  {
     "id": "extensibilidade-003",
     "level": "avancado",
     "topic": "extensibilidade",
@@ -157,6 +547,56 @@
     "answer": false,
     "explanation": "Falso. Cada subagent roda com sua própria janela de contexto, prompt de sistema e permissões. Por isso eles servem para tarefas que encheriam a conversa principal de logs ou buscas.",
     "sourceUrl": "https://code.claude.com/docs/en/sub-agents",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "extensibilidade-010",
+    "level": "avancado",
+    "topic": "extensibilidade",
+    "statement": "Um hook PreToolUse não consegue impedir a execução de uma ferramenta; ele só pode registrar que ela será usada.",
+    "answer": false,
+    "explanation": "Falso. O PreToolUse roda antes da chamada da ferramenta e pode bloqueá-la, por exemplo saindo com código 2 ou retornando uma decisão de negação em JSON. Por isso ele é usado para impor regras que não podem ter exceção.",
+    "sourceUrl": "https://code.claude.com/docs/en/hooks",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "extensibilidade-011",
+    "level": "avancado",
+    "topic": "extensibilidade",
+    "statement": "O campo tools no arquivo de um subagent permite limitar quais ferramentas ele pode usar.",
+    "answer": true,
+    "explanation": "Verdadeiro. O campo tools funciona como allowlist (e disallowedTools como denylist). Um subagent com tools: Read, Grep, Glob, por exemplo, não consegue editar nem criar arquivos. Sem o campo, ele herda as ferramentas disponíveis.",
+    "sourceUrl": "https://code.claude.com/docs/en/sub-agents",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "extensibilidade-012",
+    "level": "avancado",
+    "topic": "extensibilidade",
+    "statement": "Hooks só podem executar comandos shell; não há como um hook chamar um endpoint HTTP ou consultar um modelo.",
+    "answer": false,
+    "explanation": "Falso. Além de command, um hook handler pode ser do tipo http (envia o evento a um endpoint), mcp_tool, prompt (pede a um modelo Claude uma avaliação de um turno) ou agent.",
+    "sourceUrl": "https://code.claude.com/docs/en/hooks",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "extensibilidade-013",
+    "level": "avancado",
+    "topic": "extensibilidade",
+    "statement": "Com disable-model-invocation: true no frontmatter, a skill só roda quando o usuário a chama com /nome-da-skill.",
+    "answer": true,
+    "explanation": "Verdadeiro. Essa opção impede o Claude de acionar a skill por conta própria; a descrição nem entra no contexto. É útil para ações com efeitos colaterais, como deploys e commits, que você quer disparar manualmente.",
+    "sourceUrl": "https://code.claude.com/docs/en/skills",
+    "reviewedAt": "2026-11-16"
+  },
+  {
+    "id": "extensibilidade-014",
+    "level": "avancado",
+    "topic": "extensibilidade",
+    "statement": "Por padrão, um MCP server adicionado com claude mcp add vai para o .mcp.json do projeto e fica compartilhado com a equipe.",
+    "answer": false,
+    "explanation": "Falso. O escopo padrão é local: o servidor fica salvo em ~/.claude.json, vale só naquele projeto e é privado. Para compartilhar com a equipe via .mcp.json na raiz do projeto, use --scope project.",
+    "sourceUrl": "https://code.claude.com/docs/en/mcp",
     "reviewedAt": "2026-11-16"
   }
 ]
